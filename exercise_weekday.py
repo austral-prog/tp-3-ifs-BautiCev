@@ -1,3 +1,6 @@
+from faulthandler import dump_traceback_later
+
+
 def weekday():
     """
     Ejercicio 6 - Día Hábil
@@ -17,4 +20,11 @@ def weekday():
         Para la entrada "domingo", la salida esperada es:
         Fin de semana
     """
+    dia = input().lower()
+    if dia == "sabado":
+        print("Fin de semana")
+    elif dia == "domingo":
+        print("Fin de semana")
+    if "sabado" not in dia and "domingo" not in dia:
+        print("Dia habil")
     pass
